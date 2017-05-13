@@ -59,7 +59,7 @@
     </a>
   </body>
   <script>
-    var onResize = function() {
+      var onLoad = function() {
       var bbigHeight = (document.getElementsByClassName("bbig")[0].clientHeight);
       var bbigTextContainers = document.getElementsByClassName("bbig-text-container");
       var hBlockHeight = (document.getElementById("header").clientHeight)/2;
@@ -74,8 +74,7 @@
       document.getElementById("header-logo-container").style.lineHeight = hBlockHeight + "px";
     };
     
-    document.addEventListener("DOMContentLoaded", onResize);
-    window.resize(onResize);
+    document.addEventListener("DOMContentLoaded", onLoad);
     
     function isMobile() { 
       if( navigator.userAgent.match(/Android/i)
