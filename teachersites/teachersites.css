@@ -34,18 +34,19 @@
   height: 50%;
 }
 .teacher-bio {
-  margin: 0.35%;
-  width: 24%;
-  height: 400px;
+  margin: 0.22vw;
+  margin-bottom: 1vh;
+  width: 24vw;
+  height: 75vmin;
   display: inline-block;
-  background: linear-gradient(to bottom, #FFF 0px, #FFF 50px, #044A00 75px, #044A00 275px, #FFF 300px);
+  background: linear-gradient(to bottom, #FFF, #FFF 10vmin, #044A00 13vmin, #044A00 47vmin, #FFF 50vmin);
 }
 .teacher-bio .name {
-  padding-top: 6px;
+  padding-top: 2vmin;
   font-family: Bitter;
-  font-size: 32px;
+  font-size: 6vmin;
   width: 100%;
-  height: 44px;
+  height: 8vmin;
   color: #000;
   background-color: #FFF;
   text-align: center;
@@ -53,26 +54,25 @@
 .teacher-bio .pic {
   border-radius: 15px 0 15px 30px;
   border: 2px solid #FFF;
-  margin: auto;
-  width: 150px;
-  height: 180px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  width: 30vmin;
+  height: 36vmin;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
   box-shadow: 0px 0px #FFF;
   transition: 0.5s;
 }
 .teacher-bio .content {
   text-align: center;
   width: 100%;
-  height: 95px;
-  font-size: 24px;
+  height: 24vmin;
+  font-size: 4vmin;
   font-family: Bitter;
   color: #000;
-  background-color: #FFF;
+  background-color: #999;
   padding-top: 5px;
 }
 .teacher-bio .pic:hover {
-  box-shadow: 0px 0px 20px #FFF;
+  box-shadow: 0px 0px 20px 5px #FFF;
 }
 img {
   display: inline;
