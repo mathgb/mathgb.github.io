@@ -47,12 +47,6 @@
   transition: 0.5s;
   vertical-align: top;
 }
-.header-block-divider {
-  display: inline-block;
-  height: 50%;
-  width: 1%;
-  background: #000;
-}
 .header-block:hover {
   background-color: #30832C;
   box-shadow: 0px -2px #FFF;
