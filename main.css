@@ -18,3 +18,8 @@
 .bbig-text-container {
   line-height: 0px;
 }
+.bbig-divider {
+  background: linear-gradient(to right, #30832C 20%, #000, #30832C 80%);
+  width: 100%;
+  height: 1%;
+}
