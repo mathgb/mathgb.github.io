@@ -56,9 +56,6 @@
 .header-block:hover {
   background-color: #30832C;
 }
-.last-block {
-  border-right: none;
-}
 #header-logo-container {
   font-family: Bungee;
   font-size: 56px;
