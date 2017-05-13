@@ -93,11 +93,9 @@
     };
     if(isMobile()) {
       var headerBlocks = document.getElementsByClassName("header-block");
-      headerBlocks[0].style.fontSize = "15px";
-      headerBlocks[1].style.fontSize = "20px";
-      headerBlocks[2].style.fontSize = "15px";
-      headerBlocks[3].style.fontSize = "20px";
-      headerBlocks[4].style.fontSize = "20px";
+      for(var i = 0; i < headerBlocks.length; i++) {
+        headerBlocks[i].style.fontSize = "15px";
+      }
     }
   </script>
 </html>
