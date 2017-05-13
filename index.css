@@ -55,6 +55,7 @@
 }
 .header-block:hover {
   background-color: #30832C;
+  box-shadow: 0px -2px #FFF;
 }
 #header-logo-container {
   font-family: Bungee;
