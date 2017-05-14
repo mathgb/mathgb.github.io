@@ -16,12 +16,13 @@
   width: 20%;
   height: 50%;
   font-family: Bitter;
-  font-size: 24px;
+  font-size: 32px;
   background-color: #519B4D;
   color: #000;
   transition: 0.5s;
   vertical-align: top;
   box-shadow: 0px -2px #FFF;
+  white-space: nowrap;
 }
 .header-block:hover {
   background-color: #30832C;
@@ -34,45 +35,95 @@
   height: 50%;
 }
 .teacher-bio {
-  margin: 0.22vw;
-  margin-bottom: 1vh;
-  width: 24vw;
-  height: 75vmin;
+  height: 31vw;
+  width: 31vw;
+  margin: 0.9vw;
   display: inline-block;
-  background: linear-gradient(to bottom, #FFF, #FFF 10vmin, #044A00 13vmin, #044A00 47vmin, #FFF 50vmin);
+  vertical-align: bottom;
 }
-.teacher-bio .name {
-  padding-top: 2vmin;
-  font-family: Bitter;
-  font-size: 6vmin;
+.teacher-bio .bio-top {
+  background-color: #12620E;
+  position: relative;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  height: 8vmin;
-  color: #000;
-  background-color: #FFF;
+  height: 48%;
+  border-radius: 20px 20px 0px 0px;
+  font-family: Bitter;
+  padding-top: 2%;
+  font-size: 2.5vw;
   text-align: center;
 }
-.teacher-bio .pic {
-  border-radius: 15px 0 15px 30px;
-  border: 2px solid #FFF;
-  width: 30vmin;
-  height: 36vmin;
-  margin-top: 2vmin;
-  margin-bottom: 2vmin;
-  box-shadow: 0px 0px #FFF;
-  transition: 0.5s;
+.teacher-bio .smalltext {
+  display: block;
+  font-size: 1.5vw;
 }
-.teacher-bio .content {
-  text-align: center;
+.teacher-bio .bio-bottom {
+  padding-top: 34%;
+  background-color: #7EB77B;
+  position: relative;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  height: 24vmin;
-  font-size: 4vmin;
+  height: 16%;
+  border-radius: 0px 0px 20px 20px;
+  font-size: 3vw;
+  text-align: center;
   font-family: Bitter;
-  color: #000;
-  background-color: #FFF;
-  padding-top: 5px;
 }
-.teacher-bio .pic:hover {
-  box-shadow: 0px 0px 20px 5px #FFF;
+.teacher-bio .tag {
+  padding: 1vw;
+  font-size: 2vw;
+  margin: 1vw;
+  border: 4px solid;
+  border-radius: 10px;
+  height: 3vw;
+  width: 9vw;
+  display: inline;
+  margin-left: 0.25vw;
+  margin-right: 0.25vw;
+}
+#tip {
+  width: 31vw;
+  height: 30.5vw;
+  padding-top: 0.5vw;
+  margin: 0.9vw;
+  border-radius: 20px;
+  font-size: 5vw;
+  font-family: Bungee;
+  background-color: #519B4D;
+  line-height: 5vw;
+  text-align: center;
+  display: inline-block;
+}
+.teacher-bio .access { border-color: #f1c40f; color: #f1c40f; }
+.teacher-bio .im1 { border-color: #3498db; color: #3498db; }
+.teacher-bio .im2 { border-color: #e67e22; color: #e67e22; }
+.teacher-bio .im3 { border-color: #9b59b6; color: #9b59b6; }
+.teacher-bio .precalc { border-color: #e74c3c; color: #e74c3c; }
+.teacher-bio .hprecalc { border-color: #c0392b; color: #c0392b; }
+.teacher-bio .apcalc { border-color: #34495e; color: #34495e; }
+.teacher-bio .apstats { border-color: #555; color: #555; }
+.teacher-bio .bio-pic {
+  position: relative;
+  margin-top: -5px;
+  top: -80%;
+  left: 25%;
+  width: 50%;
+  height: 60%;
+  border-radius: 20px;
+  border: #FFF 5px solid;
+  transition: 0.3s;
+  margin-bottom: 0;
+}
+.teacher-bio .bio-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+.teacher-bio .bio-pic:hover {
+  box-shadow: 0px 0px 24px 5px #FFF;
 }
 img {
   display: inline;
