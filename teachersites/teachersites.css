@@ -56,7 +56,8 @@
 }
 .teacher-bio .smalltext {
   display: block;
-  font-size: 1.5vw;
+  font-size: 1.75vw;
+  margin-top: 0.5vw;
 }
 .teacher-bio .bio-bottom {
   padding-top: 34%;
@@ -106,11 +107,10 @@
 .teacher-bio .apstats { border-color: #555; color: #555; }
 .teacher-bio .bio-pic {
   position: relative;
-  margin-top: -5px;
-  top: -80%;
-  left: 25%;
-  width: 50%;
-  height: 60%;
+  top: -75%;
+  left: 30%;
+  width: 40%;
+  height: 50%;
   border-radius: 2.5vw;
   border: #FFF 0.5vw solid;
   transition: 0.3s;
