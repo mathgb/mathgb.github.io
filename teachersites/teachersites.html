@@ -245,9 +245,10 @@
     };
     if(isMobile()) {
       var headerBlocks = document.getElementsByClassName("header-block");
+      var hBlockTextContainers = document.getElementsByClassName("header-block-text-container");
       for(var i = 0; i < headerBlocks.length; i++) {
         headerBlocks[i].style.fontSize = "15px";
-        headerBlocks[i].style.transform = "rotate(45deg)";
+        hBlockTextContainers[i].style.transform = "rotate(45deg)";
       }
     }
   </script>
