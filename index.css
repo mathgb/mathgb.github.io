@@ -107,7 +107,7 @@ a{
   margin-right: 1vw;
   margin-bottom: 1vh;
   padding: 1vh 1vw 1vh 1vw;
-  font-size: 9vmin;
+  font-size: 6vmin;
   height: 11vh;
   line-height: 11vh;
   width: 37vw;
@@ -128,14 +128,14 @@ a{
   line-height: 13vh;
 }
 #overlay .smalltext {
-  font-size: 6vmin;
+  font-size: 4vmin;
 }
 #overlay-closer {
   display: inline-block;
   margin-right: 1vw;
   margin-bottom: 1vh;
   padding: 1vh 1vw 1vh 1vw;
-  font-size: 9vmin;
+  font-size: 6vmin;
   height: 11vh;
   line-height: 11vh;
   width: 37vw;
