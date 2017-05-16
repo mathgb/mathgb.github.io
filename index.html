@@ -141,12 +141,9 @@
       }
     };
     if(isMobile()) {
-      var headerBlocks = document.getElementsByClassName("header-block");
-      var hBlockTextContainers = document.getElementsByClassName("header-block-text-container");
-      for(var i = 0; i < headerBlocks.length; i++) {
-        headerBlocks[i].style.fontSize = "15px";
-        hBlockTextContainers[i].style.transform = "rotate(45deg)";
-      }
+      $(".header-block").css("font-size", "15px");
+      $(".header-block-text-container").css("transform", "rotate(45deg)");
+      $("#header-logo-container").css("font-size", "36px");
     }
   </script>
 </html>
