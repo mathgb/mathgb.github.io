@@ -130,6 +130,9 @@ a{
 #overlay .smalltext {
   font-size: 4vmin;
 }
+#overlay .tinytext {
+  font-size: 3vmin;
+}
 #overlay-closer {
   display: inline-block;
   margin-right: 1vw;
