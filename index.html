@@ -59,6 +59,22 @@
         <div class="bbig-text-container"> IM3 Site </div>
       </div>
     </a>
+    
+    <div id="overlay">
+      <div id="overlay-container">
+        <div class="overlay-link">Materials</div>
+        <div class="overlay-link smalltext">Common Core Approach</div>
+        <div class="overlay-link">Calculators</div>
+        <div class="overlay-link smalltext">Articles of Interest</div>
+        <div class="overlay-link smalltext">Common Core Testing</div>
+        <div class="overlay-link">Parent Q&amp;A</div>
+        <div class="overlay-link smalltext">Back To School Night</div>
+        <div class="overlay-link">Graph Paper</div>
+        <div class="overlay-link">Homelink</div>
+        <div id="overlay-closer">✖ Close ✖</div>
+      </div>
+    </div>
+    <div id="overlay-btn">&harr;</div>
   </body>
   <script>
     var onLoad = function() {
@@ -77,6 +93,36 @@
     };
     
     document.addEventListener("DOMContentLoaded", onLoad);
+    
+    var overlayOut = false;
+    
+    var overlayInOut = function() {
+      overlayOut = !overlayOut;
+      var overlay = $("#overlay"), btn = $("#overlay-btn");
+      if(overlayOut) {
+        overlay.animate({
+          top: "0",
+          left: "0"
+        }, 200);
+        btn.animate({
+          top: "100vh",
+          left: "100vw"
+        }, 200);
+      }
+      else {
+        overlay.animate({
+          top: "-100vh",
+          left: "-100vw"
+        }, 200);
+        btn.animate({
+          top: "0",
+          left: "0"
+        }, 200);
+      }
+    };
+    
+    $("#overlay-btn").on("click", overlayInOut);
+    $("#overlay-closer").on("click", overlayInOut);
     
     function isMobile() { 
       if( navigator.userAgent.match(/Android/i)
