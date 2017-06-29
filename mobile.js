@@ -13,6 +13,8 @@ function isMobile() {
     return false;
   }
 };
-if(isMobile()) {
-  $(".header-block-text-container").css("transform", "rotate(45deg)");
-}
+$(document).ready(function() {
+  if(isMobile()) {
+    $(".header-block-text-container").css("transform", "rotate(45deg)");
+  }
+});
