@@ -1,0 +1,72 @@
+#overlay {
+  position: fixed;
+  top: -100vh;
+  left: -100vw;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
+}
+#overlay-container {
+  position: relative;
+  top: 10vh;
+  left: 10vw;
+  height: 60vh;
+  width: 80vw;
+  font-size: 0;
+}
+.overlay-link {
+  display: inline-block;
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+  padding: 1vh 1vw 1vh 1vw;
+  font-size: 6vmin;
+  height: 11vh;
+  line-height: 11vh;
+  width: 37vw;
+  background-color: #7BB678;
+  text-align: center;
+  font-family: bitter;
+  vertical-align: bottom;
+  transition: 0.3s;
+}
+.overlay-link:hover {
+  margin-bottom: 0vh;
+  margin-top: -1vh;
+  margin-left: -1vw;
+  margin-right: 0;
+  background-color: #11650D;
+  height: 13vh;
+  width: 39vw;
+  line-height: 13vh;
+}
+#overlay .smalltext {
+  font-size: 4vmin;
+}
+#overlay .tinytext {
+  font-size: 3vmin;
+}
+#overlay-closer {
+  display: inline-block;
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+  padding: 1vh 1vw 1vh 1vw;
+  font-size: 6vmin;
+  height: 11vh;
+  line-height: 11vh;
+  width: 37vw;
+  background-color: #EC644B;
+  text-align: center;
+  font-family: bitter;
+  vertical-align: bottom;
+  transition: 0.3s;
+}
+#overlay-closer:hover {
+  margin-bottom: 0vh;
+  margin-top: -1vh;
+  margin-left: -1vw;
+  margin-right: -1vw;
+  background-color: #EF4836;
+  height: 13vh;
+  width: 39vw;
+  line-height: 13vh;
+}
