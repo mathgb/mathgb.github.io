@@ -4,9 +4,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GBHS Math</title>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <link rel="shortcut icon" type="image/png" href="./logo.png">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./overlay.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="overlay.js"></script>
+    <script src="mobile.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./logo.png">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Bungee" rel="stylesheet">
   </head>
   <body style="height:100%;width:100%;margin:0px;">
@@ -31,33 +35,31 @@
           </div>
         </a>
         <a href="#">
-          <div class="header-block" style="width:19%">
-            <div class="header-block-text-container">Tutoring</div>
-          </div>
-        </a>
-        <a href="#">
           <div class="header-block" style="width:23%">
             <div class="header-block-text-container">Math Info</div>
           </div>
         </a>
+        <div class="header-block" style="width:19%" id="overlay-btn">
+          <div class="header-block-text-container">Other</div>
+        </div>
       </div>
     </div>
     <div id="header-divider"></div>
     <a href="https://mathgb.github.io/im1/im1.html">
       <div class="bbig" style="height:19%">
-        <div class="bbig-text-container"> IM1 Site </div>
+        IM1 Site
       </div>
     </a>
     <div class="bbig-divider"></div>
     <a href="https://mathgb.github.io/im2/im2.html">
       <div class="bbig" style="height:19%">
-        <div class="bbig-text-container"> IM2 Site </div>
+        IM2 Site
       </div>
     </a>
     <div class="bbig-divider"></div>
     <a href="https://mathgb.github.io/im3/im3.html">
       <div class="bbig" style="height:19%">
-        <div class="bbig-text-container"> IM3 Site </div>
+        IM3 Site
       </div>
     </a>
     
@@ -65,7 +67,7 @@
       <div id="overlay-container">
         <div class="overlay-link">Materials</div>
         <div class="overlay-link smalltext">Common Core Approach</div>
-        <div class="overlay-link">Calculators</div>
+        <div class="overlay-link">Tutoring</div>
         <div class="overlay-link smalltext">Articles of Interest</div>
         <div class="overlay-link smalltext">Common Core Testing</div>
         <div class="overlay-link">Parent Q&amp;A</div>
@@ -75,75 +77,5 @@
         <div id="overlay-closer">✖ Close ✖</div>
       </div>
     </div>
-    <div id="overlay-btn">&harr;</div>
   </body>
-  <script>
-    var onLoad = function() {
-      var bbigHeight = (document.getElementsByClassName("bbig")[0].clientHeight);
-      var bbigTextContainers = document.getElementsByClassName("bbig-text-container");
-      var hBlockHeight = (document.getElementById("header").clientHeight)/2;
-      var headerBlockTextContainers = document.getElementsByClassName("header-block-text-container");
-      
-      for(var i = 0; i < bbigTextContainers.length; i++) {
-        bbigTextContainers[i].style.lineHeight = bbigHeight + "px";
-      }
-      for(var i = 0; i < headerBlockTextContainers.length; i++) {
-        headerBlockTextContainers[i].style.lineHeight = hBlockHeight + "px";
-      }
-      document.getElementById("header-logo-container").style.lineHeight = hBlockHeight + "px";
-    };
-    
-    document.addEventListener("DOMContentLoaded", onLoad);
-    
-    var overlayOut = false;
-    
-    var overlayInOut = function() {
-      overlayOut = !overlayOut;
-      var overlay = $("#overlay"), btn = $("#overlay-btn");
-      if(overlayOut) {
-        overlay.animate({
-          top: "0",
-          left: "0"
-        }, 200);
-        btn.animate({
-          top: "100vh",
-          left: "100vw"
-        }, 200);
-      }
-      else {
-        overlay.animate({
-          top: "-100vh",
-          left: "-100vw"
-        }, 200);
-        btn.animate({
-          top: "0",
-          left: "0"
-        }, 200);
-      }
-    };
-    
-    $("#overlay-btn").on("click", overlayInOut);
-    $("#overlay-closer").on("click", overlayInOut);
-    
-    function isMobile() { 
-      if( navigator.userAgent.match(/Android/i)
-        || navigator.userAgent.match(/webOS/i)
-      || navigator.userAgent.match(/iPhone/i)
-      || navigator.userAgent.match(/iPad/i)
-      || navigator.userAgent.match(/iPod/i)
-      || navigator.userAgent.match(/BlackBerry/i)
-      || navigator.userAgent.match(/Windows Phone/i)
-      ){
-        return true;
-      }
-      else {
-        return false;
-      }
-    };
-    if(isMobile()) {
-      $(".header-block").css("font-size", "15px");
-      $(".header-block-text-container").css("transform", "rotate(45deg)");
-      $("#header-logo-container").css("font-size", "36px");
-    }
-  </script>
 </html>
