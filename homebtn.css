@@ -1,0 +1,15 @@
+#home-btn {
+  border: #000 2vh solid;
+  background-color: #12620E;
+  border-radius: 20vh;
+  top: -14vh;
+  left: -14vh;
+  width: 25vh;
+  height: 25vh;
+  position: fixed;
+  font-size: 5vh;
+  font-family: Bitter;
+  color: #000;
+  text-align: center;
+  transform: rotate(-45deg);
+}
